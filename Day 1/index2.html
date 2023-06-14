@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const heading = React.createElement("h1", {
+            id: "head",
+        }, "hello, what the hell ")
+
+        const heading2 = React.createElement("h2", {
+            id: "head2",
+        }, "hello, what the hell ")
+
+        const container = React.createElement("div", {
+            id: "container",
+        }, [heading, heading2])
+
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+
+        root.render(container)
+    </script>
+</body>
+</html>
+
+
+
+<!-- We created a container with the help of react and inside that container we added two children heading and heading2. Those children are created with the help of react and at the end we rendered the container -->
+
+<!-- Here we are using plain react for creating components and this is the core of react but this is not developer friendly so that is why we prefer to use JSX -->
