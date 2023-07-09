@@ -6,17 +6,27 @@
     <title>React</title>
 </head>
 <body>
-    <div id="root"></div>
+    <!-- There is a ms lag which can show not rendered text when we reload the page as it takes few ms for react to load. -->
+    <div id="root">Not rendered</div>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script>
+
+        // React.createElements takes three argument. The first one is the tag, second is an object and the third thing is what you want to put inside the react.
+
+        // The object that we see as second argument is for the id, classes and other things which we can give to a html tag.
         const heading = React.createElement("h1", {
             id: "head",
         }, "hello, what the hell ")
 
+        // React element is an object
+        console.log(heading)
+
+        // Here we are getting access to the root with the help of ReactDOM
         const root = ReactDOM.createRoot(document.getElementById("root"))
 
+        // Now we are rendering the root with the heading
         root.render(heading)
     </script>
 </body>

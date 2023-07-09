@@ -1,7 +1,12 @@
 On day 1, I have learned how to use DOM in React and JS. We use DOM in Js through JS engine which let us use the JS on the browser.
 
 React is a library.
-Library takes minimum efforts to put it into application
+Library takes minimum efforts to put it into application.
+
+When you type ReactDOM into terminal you will see "SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: "
+
+Q. Why in CDN link of react it has two script tags ?
+Ans. Because react is not just limited to web it also exist for mobile so one link is common for both react.js as well as react.native and the other script tag contains the reactDOM.
 
 React can exist without typescript, redux and whatever you can think. On day 1, we will see pure react.
 
@@ -23,3 +28,5 @@ Benefits of CDN
 
 Q4. Why is react known as react?
 Ans. It's called React because it reacts. It was developed by Facebook (a site that CONSTANTLY updates their data) to improve the user interface development and more effectively change (REACT to) what the user sees when they're doing things like mouse clicking, submitting and typing.”
+
+Q5. What is async and defer
