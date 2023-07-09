@@ -1,5 +1,7 @@
 On day 1, I have learned how to use DOM in React and JS. We use DOM in Js through JS engine which let us use the JS on the browser.
 
+React is a library.
+Library takes minimum efforts to put it into application
 
 React can exist without typescript, redux and whatever you can think. On day 1, we will see pure react.
 
